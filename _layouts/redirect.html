@@ -1,0 +1,25 @@
+---
+layout: null
+---
+
+{%- assign link = page.link -%}
+{%- assign firstChar = link | slice: 0 -%}
+
+{%- if firstChar == '/' -%}
+  {%- assign link = site.relative_base | append: link -%}
+{%- endif -%}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="0; url={{ link }}">
+    <meta name="robots" content="noindex">
+    <script type="application/javascript">location="{{ link }}"</script>
+    <title>Redirecting&hellip;</title>
+  </head>
+  <body>
+    <h1>Redirecting&hellip;</h1>
+    <a href="{{ link }}">Click here if you are not redirected.</a>
+  </body>
+</html>

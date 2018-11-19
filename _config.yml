@@ -1,0 +1,59 @@
+title: TEDxWarwick
+permalink: /:title
+
+
+#############
+# Renderers #
+#############
+
+markdown: kramdown
+
+kramdown:
+  auto_ids: false
+  parse_block_html: true
+
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-redirect-from
+
+error_mode: strict
+strict_variables: true
+strict_filters: true
+
+
+#########
+# Files #
+#########
+
+collections:
+  links:
+    output: true
+    permalink: /:name
+
+defaults:
+  - scope:
+      path: ""
+      type: links
+    values:
+      layout: redirect
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - LICENSE
+  - README.md
+  - CNAME
+
+
+###################
+# Site parameters #
+###################
+
+url: https://go.tedxw.co
+
+repo: "TEDxWarwickTechnical/go"
+
+relative_base: "https://www.tedxwarwick.com"
