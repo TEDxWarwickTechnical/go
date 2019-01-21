@@ -1,5 +1,5 @@
 title: TEDxWarwick
-permalink: /:path/:title
+permalink: /:title
 
 
 #############
@@ -30,7 +30,7 @@ strict_filters: true
 collections:
   links:
     output: true
-    permalink: /:name
+    permalink: /:path/:name
 
 defaults:
   - scope:
