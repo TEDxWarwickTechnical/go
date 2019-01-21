@@ -1,5 +1,5 @@
 title: TEDxWarwick
-permalink: /:title
+permalink: /:path/:title
 
 
 #############
