@@ -30,7 +30,7 @@ strict_filters: true
 collections:
   links:
     output: true
-    permalink: /:path/:name
+    permalink: /:name
 
 defaults:
   - scope:
