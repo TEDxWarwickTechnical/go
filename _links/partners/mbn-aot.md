@@ -1,3 +1,3 @@
 ---
-link: "/tickets"
+link: "/events/architects-of-tomorrow"
 ---
